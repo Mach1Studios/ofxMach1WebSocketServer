@@ -1,13 +1,11 @@
 meta:
-	ADDON_NAME = ofxMetaMotion
-	ADDON_DESCRIPTION = MetaMotion IMU controller openFrameworks addon
+	ADDON_NAME = ofxMach1WebSocketServer
+	ADDON_DESCRIPTION = "Simple Websocket Server for OSC prepared for orientation transmission via an OpenFrameworks addon"
 	ADDON_AUTHOR = Mach1
-	ADDON_TAGS = "metamotion" "hardware" "imu"
-	ADDON_URL = "https://github.com/Mach1Studios/ofxMetaMotion"
+	ADDON_TAGS = "websocket" "mach1" "server"
+	ADDON_URL = "https://github.com/Mach1Studios/ofxMach1WebSocketServer"
 
 common:
-	ADDON_INCLUDES += libs/libmetawear/include
-	ADDON_INCLUDES += libs/libnativeble/include
 	ADDON_INCLUDES += src
 linux:
 linux64:
@@ -16,10 +14,7 @@ linuxarmv7l:
 android/armeabi-v7a:
 android/x86:
 osx:
-	ADDON_LIBS += libs/libnativeble/lib/osx/libnativeble-static.a
 ios:
 tvos:
 msys2:
 vs:
-	ADDON_LIBS += libs/libmetawear/lib/vs/x64/Release/MetaWear.Win32.lib
-	ADDON_LIBS += libs/libnativeble/lib/vs/x64/Release/nativeble-static.lib
